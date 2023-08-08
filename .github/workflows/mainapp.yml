@@ -31,5 +31,5 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync ./dist s3://josh-menstrual-application/
+          aws s3 sync ./src s3://josh-menstrual-application/
 
