@@ -10,7 +10,7 @@ env:
     S3_ENVIRONMENT_BUCKET: "jay-period-app"
     Project: "frontend"
     Service: "service"
-    ENVIRONMENT_FILE: "jay-period-app"
+    ENVIRONMENT_FILE: "period-build"
 phases:
   install:
     commands:
