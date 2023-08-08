@@ -1,12 +1,6 @@
 version: 0.2
 env:
   variables:
-    S3_ENVIRONMENT_BUCKET: "version: 0.2
-env:
-  variables:
-    S3_ENVIRONMENT_BUCKET: "version: 0.2
-env:
-  variables:
     S3_ENVIRONMENT_BUCKET: "jay-period-app"
     Project: "frontend"
     Service: "service"
