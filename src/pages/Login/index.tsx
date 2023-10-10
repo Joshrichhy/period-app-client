@@ -38,7 +38,7 @@ function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-pink-800">
       <div className="w-full max-w-md rounded px-5 py-8 bg-white drop-shadow-2xl">
-        <h3>Login</h3>
+        <h3>Login Now</h3>
 
         <Formik
           initialValues={initialValues}
