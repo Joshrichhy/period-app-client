@@ -4,7 +4,7 @@ env:
     S3_ENVIRONMENT_BUCKET: "periodapp-env"
     Project: "frontend"
     Service: "service"
-    ENVIRONMENT_FILE: "period-app-env"
+    ENVIRONMENT_FILE: "periodapp-env"
 phases:
   install:
     commands:
@@ -17,7 +17,7 @@ phases:
       - npm install
   build:
     commands:
-      - aws s3 cp s3://${S3_ENVIRONMENT_BUCKET}/${Project}/${Service}/${ENVIRONMENT_FILE} .rtf
+      - aws s3 cp s3://${S3_ENVIRONMENT_BUCKET}/${Project}/${Service}/${ENVIRONMENT_FILE} .env
       - echo Build Phase
       - npm run build
 
