@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    S3_ENVIRONMENT_BUCKET: "josh-period-app"
+    S3_ENVIRONMENT_BUCKET: "periodapp-env"
     Project: "frontend"
     Service: "service"
     ENVIRONMENT_FILE: "period-app-env"
@@ -24,8 +24,8 @@ phases:
   post_build:
     commands:
       - echo PostBuild Phase
-      - aws s3 sync ./dist s3://recruitment.enum.africa
-      - aws cloudfront create-invalidation --distribution-id E713H8OBS9MWP --paths "/*";
+      - aws s3 sync ./dist s3://periodapp
+      # - aws cloudfront create-invalidation --distribution-id E713H8OBS9MWP --paths "/*";
 
 # artifacts:
 #   files:
