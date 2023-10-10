@@ -8,7 +8,7 @@ env:
 phases:
   install:
     commands:
-      - npm i npm@latest -g
+      - npm i -g npm@8.5.1 
       - pip install --upgrade pip
       - pip install --upgrade awscli
   pre_build:
@@ -25,7 +25,8 @@ phases:
     commands:
       - echo PostBuild Phase
       - aws s3 sync ./dist s3://periodapp
-      # - aws cloudfront create-invalidation --distribution-id E713H8OBS9MWP --paths "/*";
+      # - aws cloudfront create-invalidation --distribution-id E713H8OBS9MWP --paths "/*"#; 
+      
 
 # artifacts:
 #   files:
